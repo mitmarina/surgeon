@@ -3,6 +3,11 @@
     src: url(fonts/Montserrat-Light.ttf);
 }
 
+@font-face {
+    font-family: "MontserratBold";
+    src: url(fonts/Montserrat-Bold.ttf);
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -39,7 +44,7 @@ body {
 }
 
 .text-bold {
-    font-weight: 700;
+    font-family: "MontserratBold", sans-serif;
 }
 
 .main-block-clinic {
@@ -367,7 +372,7 @@ body {
 .surgeon-specialization-items {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 59px;
 }
 
 .surgeon-specialization-item {
@@ -418,17 +423,85 @@ body {
 
 .surgeon-specialization .surgeon-title-block {
     margin-bottom: 91px;
+
 }
+
+.surgeon-operation .surgeon-title-block {
+    margin-bottom: 56px;
+}
+
+.surgeon-operation-btn {
+    display: flex;
+    justify-content: space-between;
+    width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.surgeon-operation-btn button {
+    padding: 20px 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 21px 7px rgba(155, 155, 155, 0.13);
+    border-radius: 6px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.surgeon-operation-btn .active {
+    background: #597FAE;
+    color: #ffffff;
+}
+
 
 .surgeon-specialization .surgeon-price-item-more {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 59px;
 }
 
 .surgeon-specialization .surgeon-price-item-more a {
     color: #597FAE;
     border-bottom: 1px dashed #597FAE;
 } 
+
+.surgeon-operation-list ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.surgeon-operation-list ul li {
+    width: 500px;
+    padding: 27px 0;
+}
+
+.surgeon-operation-list ul li:nth-child(4),
+.surgeon-operation-list ul li:nth-child(5),
+.surgeon-operation-list ul li:nth-child(6) {
+    border-bottom: 1px dashed;
+    border-top: 1px dashed;
+}
+
+.surgeon-operation-list .arrow-right {
+    margin-right: 26px;
+}
+
+#surgeon-operation-item2 {
+    display: none;
+}
+
+#surgeon-operation-item3,
+#surgeon-operation-item4 {
+    display: none;
+    font-size: 27px;
+}
+
+.surgeon-operation-info {
+    text-align: center;
+}
+
 
 
 
