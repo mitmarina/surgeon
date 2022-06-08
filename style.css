@@ -426,6 +426,10 @@ body {
 
 }
 
+.surgeon-operation {
+    margin-bottom: 80px;
+}
+
 .surgeon-operation .surgeon-title-block {
     margin-bottom: 56px;
 }
@@ -502,7 +506,127 @@ body {
     text-align: center;
 }
 
+.surgeon-form {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 50px;
+    padding: 66px 87px;
+    border-radius: 30px;
+    background-image: url(./images/bg.png);
+    position: relative;
+}
 
+.surgeon-form .surgeon-title-block {
+    width: 695px;
+    text-align: left;
+}
+
+.surgeon-form-info p {
+    font-size: 24px;
+}
+
+.surgeon-form-blanck {
+    width: 420px;
+    display: flex;
+}
+
+.surgeon-form-info-items {
+    font-size: 18px;
+}
+
+.surgeon-form-info-item {
+    display: flex;
+    margin: 26px 0;
+}
+
+.surgeon-form-info-contacts {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.surgeon-form-info-contacts-item {
+    display: flex;
+    align-items: center;
+    margin-top: 7px;
+}
+
+.surgeon-form-info-item .surgeon-form-info-item-left {
+    margin-right: 13px;
+}
+
+.surgeon-form-info-contacts-phone  {
+    margin-right: 70px;
+}
+
+.surgeon-form-info-contacts-phone .surgeon-form-info-contacts-item .circle {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #00B327;
+    margin-right: 17px;
+    margin-left: 7px;
+}
+
+.surgeon-form-info-contacts-item .phone {
+    margin-right: 7px;
+    display: flex;
+}
+
+.surgeon-form-info-contacts-right .phone-number {
+    font-size: 30px;
+}
+
+.surgeon-form-info-contacts-social p {
+    margin: 0;
+    width: 126px;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.surgeon-form-doctor {
+    background-image: url(./images/haritonov_form.png);
+    position: absolute;
+    width: 474px;
+    height: 776px;
+    left: 562px;
+    top: 15px;
+}
+
+
+.surgeon-form-blanck,
+.surgeon-form-blanck-callback form{
+    display: flex;
+    flex-direction: column;
+}
+
+.surgeon-form-blanck-title {
+    width: 434px;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 52px;
+}
+
+.surgeon-form-blanck-callback form input {
+    width: 335px;
+    height: 35px;
+    background: #FFFFFF;
+    border-radius: 1000px;
+    margin-bottom: 25px;
+    border: none;
+    outline: none;
+    padding: 30px 44px;
+    color: #131010;
+    font-size: 20px;
+}
+
+::placeholder {
+    font-size: 20px;
+    color: #A8A8A8;
+
+
+}
 
 
 
