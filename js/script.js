@@ -66,11 +66,17 @@ itemBtn4.addEventListener("click", function()  {
 
 
 
-$(function(){
-    $('.phone').mask("+380(99) 999-99-99");
-});
+// $(function(){
+//     $('.phone').mask("+7(999)999-99-99");
+// });
 
 
+let select = document.querySelector('.surgeon-form-select-arrow');
+let option = document.querySelector('.surgeon-form-select-option');
+
+select.addEventListener('click', function() {
+    option.style.display="block";
+})
 
 
 

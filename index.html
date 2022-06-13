@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="css/animate.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -117,7 +118,7 @@
                     </div>
                     <div class="main-block-about-services-button">
                         <div class="main-block-about-services-button-btn">
-                            <button>Записаться на бесплатную консультацию с фотомоделированием</button>
+                            <button class="animated pulse">Записаться на бесплатную консультацию с фотомоделированием</button>
                             <span>* Акция действительна до: 11.05.2022</span>
                         </div>
                         <div class="main-block-about-services-button-social">
@@ -455,11 +456,25 @@
                     </div>
                     <div class="surgeon-form-blanck-callback">
                         <form action="">
-                            <input type="text" placeholder="Как Вас зовут?">
-                            <input type="tel" placeholder="+7 ( _ _ _) _ _ - _ _ - _ _">
-                            <select name="consultation">
+                            <input type="text"  placeholder="Как Вас зовут?">
+                            <input type="text" id="phone" placeholder="+7 ( _ _ _) _ _ - _ _ - _ _">
+                            <div class="surgeon-form-select">
+                                <div class="surgeon-form-select-arrow">
+                                    <div>Выберите тип консультации:</div> 
+                                    <div class="surgeon-form-select-img">
+                                        <img src="images/select.png" alt="">
+                                    </div>
+                                </div> 
+                                <div class="surgeon-form-select-option">
+                                    <span>Первичная ринопластика носа</span>
+                                    <span>Вторичная ринопластика</span>
+                                    <span>Реконструктивная ринопластика</span>
+                                    <span>Функциональная ринопластика</span>
+                                </div>
+                            </div>
+                            <!-- <select name="consultation"> 
                                 <option value=""></option>
-                            </select>
+                            </select> -->
                             <button>Записаться на бесплатную консультацию</button>
                             <input type="checkbox">
                             <a class="click-decoration" href="">Согласен с условиями обработки персональных данных</a>
@@ -474,6 +489,7 @@
 
 
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="jquery.maskedinput.js"></script>
     <script src="js/script.js"></script>
 </body>
 
