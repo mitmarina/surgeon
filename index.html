@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"/>
     <link href="css/animate.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -28,7 +29,7 @@
                         </div>
                         <div class="main-block-clinic-text">
                             Двухэтажная клиника 1000 кв.м <span class="text-bold">открылась в 2020 году в Москве</span>
-                            <a class="click-decoration" href="">Посмотреть видео о клинике</a>
+                            <a class="click-decoration" href="https://youtu.be/qFaaUspzFCk">Посмотреть видео о клинике</a>
                         </div>
                     </div>
                     <div class="main-block-rating">
@@ -52,14 +53,14 @@
                 </div>
                 <div class="main-block-menu">
                     <ul>
-                        <li><a href="">стоимость</a></li>
-                        <li><a href="">подробно об операции</a></li>
-                        <li><a href="">о докторе</a></li>
-                        <li><a href="">истории пациентов</a></li>
-                        <li><a href="">клиника</a></li>
-                        <li><a href="">ответы на вопросы</a></li>
-                        <li><a href="">дипломы</a></li>
-                        <li><a href="">контакты</a></li>
+                        <li class="wow swing"><a href="#prices">стоимость</a></li>
+                        <li class="wow backInDown"><a href="#operation">подробно об операции</a></li>
+                        <li class="wow swing"><a href="#get">записаться</a></li>
+                        <li class="wow backInDown"><a href="">истории пациентов</a></li>
+                        <li class="wow swing"><a href="">клиника</a></li>
+                        <li class="wow backInDown"><a href="">ответы на вопросы</a></li>
+                        <li class="wow swing"><a href="">дипломы</a></li>
+                        <li class="wow backInDown"><a href="#contacts_all">контакты</a></li>
                     </ul>
                 </div>
                 <div class="main-block-about">
@@ -118,7 +119,7 @@
                     </div>
                     <div class="main-block-about-services-button">
                         <div class="main-block-about-services-button-btn">
-                            <button class="animated pulse">Записаться на бесплатную консультацию с фотомоделированием</button>
+                            <button>Записаться на бесплатную консультацию с фотомоделированием</button>
                             <span>* Акция действительна до: 11.05.2022</span>
                         </div>
                         <div class="main-block-about-services-button-social">
@@ -130,7 +131,7 @@
                             </div>
                         </div>
                         <div class="main-block-about-services-button-name">
-                            <div class="main-block-about-services-button-name-doc">
+                            <div class="main-block-about-services-button-name-doc wow rollIn">
                                 Константин Харитонов
                             </div>
                             <div class="main-block-about-services-button-name-prof">
@@ -147,7 +148,7 @@
         <div class="surgeon-title-block"></div>
     </section>
 
-    <section class="surgeon-price">
+    <section class="surgeon-price" id="prices">
         <div class="container">
             <div class="surgeon-title-block">
                 <span class="text-bold">Акции и скидки</span> в нашей клинике
@@ -267,7 +268,7 @@
         </div>
     </section>
 
-    <section class="surgeon-operation">
+    <section class="surgeon-operation" id="operation">
         <div class="container">
             <div class="surgeon-title-block">
                 Подробно<span class="text-bold"> об операции</span> 
@@ -374,7 +375,7 @@
         </div>
     </section>
 
-    <section class="surgeon-clients-form">
+    <section class="surgeon-clients-form" id="get">
         <div class="container">
             <div class="surgeon-form">
                 <div class="surgeon-form-info">
@@ -472,12 +473,12 @@
                                     <span>Функциональная ринопластика</span>
                                 </div>
                             </div>
-                            <!-- <select name="consultation"> 
-                                <option value=""></option>
-                            </select> -->
-                            <button>Записаться на бесплатную консультацию</button>
-                            <input type="checkbox">
-                            <a class="click-decoration" href="">Согласен с условиями обработки персональных данных</a>
+                            <button class="surgeon-form-btn">Записаться на бесплатную консультацию</button>
+                            <div class="surgeon-form-agree">
+                                <input type="checkbox">
+                                <a class="click-decoration" href="">Согласен с условиями обработки персональных данных</a>
+                            </div>
+                            
                         </form>
                     </div>
                     
@@ -487,8 +488,83 @@
         </div>
     </section>
 
+    <section class="surgeon-map" id="contacts_all">
+        <div class="surgeon-map-iframe">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.6133667618333!2d37.449096515502724!3d55.67832320520187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54dc72a32460b%3A0x62358db6d3a1e5ae!2z0JHQvtC70YzRiNCw0Y8g0J7Rh9Cw0LrQvtCy0YHQutCw0Y8g0YPQuy4sIDMxLCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzYx!5e0!3m2!1sru!2sby!4v1655188366703!5m2!1sru!2sby" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="surgeon-map-contacts">
+            <div class="surgeon-map-contacts-address">
+                <div class="surgeon-form-info-contacts-phone">
+                    <div class="surgeon-form-info-contacts-item">
+                        <div class="surgeon-form-info-contacts-left circle">
+                            
+                        </div>
+                        <div class="surgeon-form-info-contacts-right">
+                            <span class="text-bold">Звоните,</span> Пн-ВС с 8:00 до 21:00
+                        </div>
+                    </div>
+                    <div class="surgeon-form-info-contacts-item">
+                        <div class="surgeon-form-info-contacts-left phone">
+                           <img src="images/phone_call.png" alt="">
+                        </div>
+                        <div class="surgeon-form-info-contacts-right">
+                            <span class="text-bold phone-number">7 (499) 286 88 60</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="surgeon-map-contacts-location">
+                    <div><img src="images/location.png" alt=""></div>
+                    <div><span class="text-bold">г. Москва,</span> ул. Большая Очаковская, д. 31</div>
+                </div>
+                <div class="surgeon-map-contacts-social">
+                    <div class="surgeon-form-info-contacts-social">
+                        <p>Спрашивайте,<span class="text-bold"> мы онлайн</span></p>
+                        <img src="images/whats.png" alt="">
+                        <img src="images/telegr.png" alt="">
+                    </div>
+                    <div class="surgeon-form-info-contacts-social">
+                        <p>Подписывайтесь,<span class="text-bold"> мы онлайн</span></p>
+                        <img src="images/vk.png" alt="">
+                        <img src="images/telegr.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="surgeon-map-contacts-photoes">
+                <div class="surgeon-map-contacts-photoes-text">
+                    Приезжайте к нам в клинику, <span class="text-bold">прямо сейчас!</span> 
+                </div>
+                <div class="surgeon-map-contacts-photoes-callery">
+                    <img src="images/klinik1.png" alt="">
+                    <img src="images/klinik2.png" alt="">
+                    <img src="images/klinik3.png" alt="">
+                    <img src="images/klinik4.png" alt="">
+                </div>
+            </div>
+        </div> 
+    </section>
 
+    <section class="footer">
+        <div class="container">
+            <div class="main-block-logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="footer-address">
+                ООО "РЕВАЙТАЛАЙФ" | ОГРН 1197746735009 Юр. адрес: Москва, Б. Очаковская ул., д. 31
+            </div>
+            <div class="footer-city">
+                Москва © 2022 <br> ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ. НЕОБХОДИМА КОНСУЛЬТАЦИЯ СПЕЦИАЛИСТА
+            </div>
+            <div>
+                <a class="click-decoration" href="">Политика конфиденциальности</a>
+            </div>
+            <div class="footer-developer">Directed by <a class="click-decoration" href="https://github.com/mitmarina">Marina Voroshkevich</a></div>
+        </div>
+    </section>
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
     <script type="text/javascript" src="jquery.maskedinput.js"></script>
     <script src="js/script.js"></script>
 </body>
